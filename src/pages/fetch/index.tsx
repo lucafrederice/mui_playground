@@ -27,6 +27,7 @@ export default function Fetch() {
             justifyItems: "center",
             gap: "1rem"
         }}>
+            <Typography variant={"subtitle1"} color="primary" sx={{fontWeight: "bold"}}>Your Age:</Typography>
             {/* @ts-ignore */}
             <Typography variant="h1" color={"primary"}>{loading ? <CircularProgress size={80} /> : response?.[0]?.age || 0}</Typography>
 
